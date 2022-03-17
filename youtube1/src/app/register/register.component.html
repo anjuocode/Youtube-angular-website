@@ -1,5 +1,5 @@
-<!-- <form #userName="ngForm" (ngSubmit)="onClickSubmit(userName.value) "> -->
-<form>
+<form #userName="ngForm" (ngSubmit)="onClickSubmit(userName.value) ">
+
     <fieldset class="form-group ">
         <input type="text " class="form-control " name="first_name " placeholder="first_name " ngModel>
     </fieldset>
@@ -16,7 +16,6 @@
         <input type="password " class="form-control " name="password " placeholder="Enter Password " ngModel>
     </fieldset>
     <fieldset class="form-group text-xs-right ">
-        <!-- <button type="submit " (click)="submit() ">Submit</button> -->
+        <button type="submit " (click)="submit()">Submit</button>
     </fieldset>
 </form>
-<!-- </form> -->
