@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Youtube Home Page - Coding Power</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <i class="material-icons">menu</i>
+            <img src="images/logo.png" alt="">
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <div class="searchbtn">
+                <i class="material-icons">search</i>
+            </div>
+            <i class="material-icons">mic</i>
+        </div>
+        <div class="icons">
+            <i class="material-icons">video_call</i>
+            <i class="material-icons">apps</i>
+            <div class="notification">
+                <i class="material-icons">notifications</i>
+                <span data-count="5+"></span>
+            </div>
+            <img src="images/account-logo.jpg" alt="">
+        </div>
+        <a class="nav-item nav-link" routerLink="/login">Login</a>
+        <a class="nav-item nav-link" routerLink="/register">Register</a>
+    </nav>
+    <router-outlet></router-outlet>
+    <div class=" sidebar ">
+        <div class="links ">
+            <div class="icon ">
+                <a href="# "><i class="material-icons ">home</i>
+                <span>Home</span></a>
+            </div>
+            <div class="icon ">
+                <a href="# "><i class="material-icons ">explore</i>
+                    <span>Explore</span></a>
+            </div>
+            <div class="icon ">
+                <a href="# "><i class="material-icons ">subscriptions</i>
+                    <span>Subscription</span></a>
+            </div>
+        </div>
+        <div class="links links-2 ">
+            <div class="icon ">
+                <a href="# "><i class="material-icons ">video_library</i>
+                    <span>Library</span></a>
+
+            </div>
+            <div class="icon ">
+                <a href="# "> <i class="material-icons ">history</i>
+                    <span>History</span></a>
+
+            </div>
+            <div class="icon ">
+                <a href="# "><i class="material-icons ">watch_later</i>
+                    <span>Watch Later</span></a>
+
+            </div>
+            <div class="icon ">
+                <a href="# "><i class="material-icons ">thumb_up</i>
+                    <span>Like Videos</span></a>
+
+            </div>
+        </div>
+        <div class="subscription links ">
+            <h4>SUBSCRIPTIONS</h4>
+            <div class="icon ">
+                <a href="# "><i class="material-icons ">audiotrack</i>
+                    <span>Music</span></a>
+
+            </div>
+            <div class="icon ">
+                <a href="# "><i class="material-icons ">emoji_events</i>
+                    <span>Sport</span></a>
+
+            </div>
+            <div class="icon ">
+                <a href="# "><i class="material-icons ">sports_esports</i>
+                    <span>Gaming</span></a>
+
+            </div>
+            <div class="icon ">
+                <a href="# "><i class="material-icons ">movie</i>
+                    <span>Films</span></a>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="content ">
+
+    </div>
+
+</body>
+
+</html>
