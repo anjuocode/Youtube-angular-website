@@ -33,8 +33,7 @@ export class RegisterComponent implements OnInit {
       })
   }
     let bodydata = {
-      email : 'anjukargwaal@gmail.com',
-      msg : 'Hello anju!'
+      
     }
         this.http.post('http://localhost:8000/register', bodydata, headers).subscribe((result:any) => {
           console.log(result,"fdffffff")

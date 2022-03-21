@@ -1,16 +1,14 @@
-<div class="container">
-    <!-- <form #loginform="ngForm"> -->
-    <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-    </div>
-    <div class="form-group">
-        <label for="pwd">Password:</label>
-        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
-    </div>
-    <div class="checkbox">
-        <label><input type="checkbox" name="remember"> Remember me</label>
-    </div>
-    <button type="submit" class="btn btn-default">Login</button>
-    <!-- </form> -->
+<div class="loginwrap">
+    <span class="login-head">Login</span>
+    <form #userName="ngForm" (ngSubmit)="onClickSubmit(userName.value) ">
+        <div class="unamelabel ">Username</div>
+        <fieldset class="unamecontrol controlwrap"> <input type="text " class="form-control " name="username " placeholder="Enter username " ngModel>
+        </fieldset>
+        <div class="passwordlabel ">Password</div>
+
+        <fieldset class="passwordcontrol controlwrap"><input type="password " class="form-control " name="password " placeholder="Enter password " ngModel>
+        </fieldset>
+        <div class="submitwrap"> <button type="submit " (click)="submit()">Login</button></div>
+        <div class="forgotpass"><span>Forgot password?</span><a href="">Click Here</a></div>
+    </form>
 </div>
